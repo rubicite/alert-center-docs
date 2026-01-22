@@ -1,0 +1,970 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The governed notification engine for Salesforce. Real-time alerts for sales, service, and operations.">
+      
+      
+        <meta name="author" content="TTW">
+      
+      
+        <link rel="canonical" href="https://rubicite.github.io/alert-center-docs/roadmap/">
+      
+      
+        <link rel="prev" href="../usecases/">
+      
+      
+        <link rel="next" href="../faq/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Roadmap - Alert Center — Public Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#roadmap" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Alert Center — Public Docs" class="md-header__button md-logo" aria-label="Alert Center — Public Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Alert Center — Public Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Roadmap
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/rubicite/alert-center-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../features/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Features
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../usecases/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Use Cases
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Roadmap
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Alert Center — Public Docs" class="md-nav__button md-logo" aria-label="Alert Center — Public Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Alert Center — Public Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/rubicite/alert-center-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usecases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Use Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#currently-available-v10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Currently Available (v1.0)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q1-2026-scheduling-batching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 2026: Scheduling &amp; Batching
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q1-2026-slack-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 2026: Slack Integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q2-2026-predictive-recipient-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 2026: Predictive Recipient Routing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q2-2026-webhook-extensibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 2026: Webhook Extensibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q2-2026-microsoft-teams-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 2026: Microsoft Teams Integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h2-2026-advanced-features-in-exploration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H2 2026: Advanced Features (In Exploration)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-request-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Request Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Timeline
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#currently-available-v10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Currently Available (v1.0)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q1-2026-scheduling-batching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 2026: Scheduling &amp; Batching
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q1-2026-slack-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q1 2026: Slack Integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q2-2026-predictive-recipient-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 2026: Predictive Recipient Routing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q2-2026-webhook-extensibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 2026: Webhook Extensibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q2-2026-microsoft-teams-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q2 2026: Microsoft Teams Integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#h2-2026-advanced-features-in-exploration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H2 2026: Advanced Features (In Exploration)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-request-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Request Features
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support-timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Support Timeline
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="roadmap">Roadmap<a class="headerlink" href="#roadmap" title="Permanent link">&para;</a></h1>
+<p>Alert Center is evolving rapidly. Here's what we're shipping—and what's coming next.</p>
+<h2 id="currently-available-v10">Currently Available (v1.0)<a class="headerlink" href="#currently-available-v10" title="Permanent link">&para;</a></h2>
+<p>✅ <strong>Core Notification Engine</strong>
+- Trigger-driven architecture<br />
+- Real-time event processing<br />
+- Condition-based rule evaluation  </p>
+<p>✅ <strong>Multi-Channel Delivery</strong>
+- Email with HTML templates<br />
+- In-app bell notifications<br />
+- Delayed and batched delivery  </p>
+<p>✅ <strong>Smart Recipient Resolution</strong>
+- Explicit, hierarchical, and role-based routing<br />
+- Relationship-based recipient lookup<br />
+- SOQL-based dynamic resolution<br />
+- Fallback chains and escalation  </p>
+<p>✅ <strong>Enterprise Governance</strong>
+- FLS and CRUD enforcement<br />
+- Sharing model compliance<br />
+- Audit logging (every notification tracked)<br />
+- Rate limiting and notification control  </p>
+<p>✅ <strong>Configuration Framework</strong>
+- No-code rule builder for admins<br />
+- Template editor and customization<br />
+- Lightweight extensibility for developers  </p>
+<p>✅ <strong>Documentation &amp; Support</strong>
+- Installation guide<br />
+- Configuration playbooks<br />
+- API documentation<br />
+- FAQ and troubleshooting  </p>
+<hr />
+<h2 id="q1-2026-scheduling-batching">Q1 2026: Scheduling &amp; Batching<a class="headerlink" href="#q1-2026-scheduling-batching" title="Permanent link">&para;</a></h2>
+<p><strong>Smart Time Windows</strong>
+- Send notifications only during business hours<br />
+- Respect time zones across global teams<br />
+- Quiet hours and blackout windows<br />
+- User preference overrides (opt-in to urgent-only outside hours)  </p>
+<p><strong>Digest &amp; Rollup</strong>
+- Daily, weekly, or custom summary digests<br />
+- Grouped by priority, sender, or record type<br />
+- Reduce notification fatigue while improving visibility<br />
+- Separate channels for urgent vs. summary  </p>
+<p><strong>Delayed Execution</strong>
+- Queue notifications for specific times<br />
+- Recurring triggers (daily standups, weekly reviews)<br />
+- Cron-based scheduling  </p>
+<hr />
+<h2 id="q1-2026-slack-integration">Q1 2026: Slack Integration<a class="headerlink" href="#q1-2026-slack-integration" title="Permanent link">&para;</a></h2>
+<p><strong>Send Alerts to Slack</strong>
+- Real-time notifications in Slack channels<br />
+- Direct messages to channel members<br />
+- Interactive buttons (Approve, Snooze, View Record)<br />
+- Threaded conversations tied to Salesforce records  </p>
+<p><strong>Slack → Salesforce Feedback Loop</strong>
+- Users act on Slack notifications and update Salesforce<br />
+- Click "View" to jump to the record in Salesforce<br />
+- Rich previews of related records and context  </p>
+<p><strong>Channel Routing</strong>
+- Route alerts to #sales, #customer-success, #finance-approvals, etc.<br />
+- Per-user Slack DM routing for high-priority alerts  </p>
+<hr />
+<h2 id="q2-2026-predictive-recipient-routing">Q2 2026: Predictive Recipient Routing<a class="headerlink" href="#q2-2026-predictive-recipient-routing" title="Permanent link">&para;</a></h2>
+<p><strong>AI-Powered Routing</strong>
+- Learn which recipients historically engage with specific alert types<br />
+- Route based on past behavior (who actually acts on alerts)<br />
+- Eliminate notification noise by predicting engagement  </p>
+<p><strong>Availability &amp; Capacity</strong>
+- Route to available team members (based on calendar, Slack status)<br />
+- Load-balance high-volume alerts across teams<br />
+- Time-shift notifications based on team capacity  </p>
+<p><strong>Smart Escalation</strong>
+- Automatic escalation if no one engages within X minutes<br />
+- Escalate to manager if owner is out of office<br />
+- Route to secondary queue if primary recipient is unreachable  </p>
+<hr />
+<h2 id="q2-2026-webhook-extensibility">Q2 2026: Webhook Extensibility<a class="headerlink" href="#q2-2026-webhook-extensibility" title="Permanent link">&para;</a></h2>
+<p><strong>Outbound Webhooks</strong>
+- Fire webhooks when notifications are sent<br />
+- Integrate with your custom systems, IFTTT, Zapier<br />
+- Trigger downstream workflows (Slack, Teams, Jira, etc.)  </p>
+<p><strong>Inbound Webhooks</strong>
+- Accept data from external systems and trigger Salesforce workflows<br />
+- Correlate external events with Salesforce records  </p>
+<p><strong>Webhook Templates</strong>
+- Pre-built templates for common integrations<br />
+- Payload customization via simple UI<br />
+- Retry logic and error handling built-in  </p>
+<hr />
+<h2 id="q2-2026-microsoft-teams-integration">Q2 2026: Microsoft Teams Integration<a class="headerlink" href="#q2-2026-microsoft-teams-integration" title="Permanent link">&para;</a></h2>
+<p><strong>Send Alerts to Teams</strong>
+- Real-time notifications in Teams channels<br />
+- Direct messages to team members<br />
+- Adaptive Cards with rich context<br />
+- Interactive actions (Approve, View, Snooze)  </p>
+<p><strong>Teams → Salesforce</strong>
+- Click-through to Salesforce records<br />
+- Bi-directional sync for approvals  </p>
+<hr />
+<h2 id="h2-2026-advanced-features-in-exploration">H2 2026: Advanced Features (In Exploration)<a class="headerlink" href="#h2-2026-advanced-features-in-exploration" title="Permanent link">&para;</a></h2>
+<p>🚀 <strong>Custom Notification Channels</strong>
+- SMS and voice alerts<br />
+- Push notifications to mobile apps<br />
+- Custom HTTP endpoints<br />
+- Integration with third-party notification services  </p>
+<p>🚀 <strong>Analytics &amp; Reporting</strong>
+- Notification delivery metrics (sent, delivered, opened, acted upon)<br />
+- Engagement analytics by rule, user, and channel<br />
+- SLA tracking (time to alert, time to action)<br />
+- Dashboard templates for ops, finance, and leadership  </p>
+<p>🚀 <strong>Workflow Automation</strong>
+- Trigger Salesforce Flows based on notification actions<br />
+- Auto-escalation workflows based on engagement rules<br />
+- Conditional follow-up alerts  </p>
+<p>🚀 <strong>Template Library</strong>
+- Pre-built notification templates by use case (sales, support, finance)<br />
+- Industry-specific playbooks<br />
+- Template versioning and A/B testing  </p>
+<hr />
+<h2 id="how-to-request-features">How to Request Features<a class="headerlink" href="#how-to-request-features" title="Permanent link">&para;</a></h2>
+<p>Have an idea? Want to vote on a feature?</p>
+<ol>
+<li><a href="https://github.com/rubicite/Alert-Center/discussions">Create a discussion in our community</a>  </li>
+<li>Vote on existing feature requests  </li>
+<li>Share use cases and requirements  </li>
+</ol>
+<p>Your feedback shapes our roadmap. We listen to what matters to you.</p>
+<hr />
+<h2 id="support-timeline">Support Timeline<a class="headerlink" href="#support-timeline" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>v1.0</strong>: 12 months of active support  </li>
+<li><strong>v2.0</strong>: TBD (estimated Q4 2026)  </li>
+</ul>
+<hr />
+<p><a href="../">← Back to Home</a> | <a href="../features/">View Features →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.indexes", "navigation.tabs", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
