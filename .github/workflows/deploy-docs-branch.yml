@@ -1,0 +1,48 @@
+name: Deploy to docs branch
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Install MkDocs
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs mkdocs-material
+      
+      - name: Build site
+        run: mkdocs build --strict
+      
+      - name: Deploy to docs branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Create or reset docs branch
+          git checkout --orphan docs-new
+          git rm -rf .
+          
+          # Copy built site to root
+          cp -r site/* .
+          
+          # Add and commit
+          git add .
+          git commit -m "Deploy site from main"
+          
+          # Force push to docs branch
+          git push origin docs-new:docs --force
