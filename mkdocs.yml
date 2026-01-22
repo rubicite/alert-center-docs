@@ -1,30 +1,38 @@
 site_name: Alert Center — Public Docs
-site_description: Public overview, roadmap, and marketing materials for Alert Center
+site_description: The governed notification engine for Salesforce. Real-time alerts for sales, service, and operations.
 site_author: TTW
+site_url: https://rubicite.github.io/alert-center-docs/
+repo_url: https://github.com/rubicite/alert-center-docs
 
-# Keep public site minimal and non-technical
-docs_dir: public-docs
+docs_dir: docs
 site_dir: site
 
 theme:
   name: material
   language: en
   palette:
-    - scheme: default
+    - scheme: slate
       primary: indigo
       accent: indigo
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.indexes
+    - navigation.tabs
     - search.suggest
     - search.highlight
+    - content.code.copy
+  custom_dir: docs/overrides
+
+extra_css:
+  - stylesheets/custom.css
 
 nav:
   - Home: index.md
-  # Extend with safe, non-technical pages only
-  # - Roadmap: roadmap.md
-  # - Marketing: marketing.md
+  - Features: features.md
+  - Use Cases: usecases.md
+  - Roadmap: roadmap.md
+  - FAQ: faq.md
 
 markdown_extensions:
   - admonition
