@@ -1,0 +1,40 @@
+site_name: Alert Center — Public Docs
+site_description: Public overview, roadmap, and marketing materials for Alert Center
+site_author: TTW
+
+# Keep public site minimal and non-technical
+docs_dir: public-docs
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  # Extend with safe, non-technical pages only
+  # - Roadmap: roadmap.md
+  # - Marketing: marketing.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.extra
+  - pymdownx.tabbed
+  - pymdownx.details
+
+# Optional: set once the public repo is created
+# repo_url: https://github.com/<org_or_user>/<public_docs_repo>
+# site_url: https://<org_or_user>.github.io/<public_docs_repo>/
